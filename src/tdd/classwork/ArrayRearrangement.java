@@ -101,5 +101,6 @@ public class ArrayRearrangement {
 
         return digitArray;
 
+
     }
 }
