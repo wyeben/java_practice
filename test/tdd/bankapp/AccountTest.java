@@ -4,12 +4,12 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class BankAccountTest {
-    private BankAccount account;
+public class AccountTest extends Bank{
+    private Account account;
 
     @BeforeEach
     public void setup() {
-        account = new BankAccount("1", 1);
+        account = new Account("1", 1);
     }
 
     @Test
@@ -31,7 +31,7 @@ public class BankAccountTest {
     }
 
     @Test
-    public void canWithdrawInsufficientFunds() {
+    public void canNotWithdrawInsufficientFunds() {
         account.deposit(500.0);
         assertFalse(account.withdraw(1000.0, 1));
         assertEquals(500.0, account.getBalance());
@@ -47,5 +47,14 @@ public class BankAccountTest {
     @Test
     public void checkAccountNumber() {
         assertEquals("1", account.getAccountNumber());
+    }
+
+    @Test
+    public void registerAnAccount(){
+        account.register("Yila", "Benson");
+        account.setAccountNumber("12");
+        Bank.name("Gtbank");
+        assertEquals("Yila Benson 12",account.getAccountDetail());
+
     }
 }

@@ -1,11 +1,14 @@
 package tdd.bankapp;
 
-public class BankAccount {
+public class Account {
+        private String firstName;
+        private String secondName;
         private String accountNumber;
+        private String accountDetail;
         private double balance;
         private int pin;
 
-        public BankAccount(String accountNumber, int pin) {
+        public Account(String accountNumber, int pin) {
             this.accountNumber = accountNumber;
             this.balance = 0.0;
             this.pin = pin;
@@ -32,4 +35,21 @@ public class BankAccount {
             }
             return false;
         }
+
+    public void register(String firstName, String secondName) {
+            this.firstName = firstName;
+        this.secondName = secondName;
+
     }
+
+    public void setAccountNumber(String number) {
+            this.accountNumber = number;
+
+    }
+
+    public String getAccountDetail() {
+        this.accountDetail = firstName + " "+ secondName + " " + accountNumber;
+        return accountDetail;
+    }
+
+}
