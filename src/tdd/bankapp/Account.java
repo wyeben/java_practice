@@ -7,6 +7,7 @@ public class Account {
         private String accountDetail;
         private double balance;
         private int pin;
+        private Bank bank;
 
         public Account(String accountNumber, int pin) {
             this.accountNumber = accountNumber;
@@ -38,7 +39,7 @@ public class Account {
 
     public void register(String firstName, String secondName) {
             this.firstName = firstName;
-        this.secondName = secondName;
+            this.secondName = secondName;
 
     }
 
@@ -48,7 +49,8 @@ public class Account {
     }
 
     public String getAccountDetail() {
-        this.accountDetail = firstName + " "+ secondName + " " + accountNumber;
+        this.accountDetail = firstName + " "+ secondName +
+                " " + accountNumber;
         return accountDetail;
     }
 

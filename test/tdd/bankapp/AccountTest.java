@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class AccountTest extends Bank{
+public class AccountTest {
     private Account account;
 
     @BeforeEach
@@ -52,9 +52,8 @@ public class AccountTest extends Bank{
     @Test
     public void registerAnAccount(){
         account.register("Yila", "Benson");
-        account.setAccountNumber("12");
-        Bank.name("Gtbank");
-        assertEquals("Yila Benson 12",account.getAccountDetail());
+        account.setAccountNumber("12243645");
+        assertEquals("Yila Benson 12243645",account.getAccountDetail());
 
     }
 }
