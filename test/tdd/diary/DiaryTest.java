@@ -19,16 +19,16 @@ class DiaryTest {
     }
 
     @Test
-    void unlockDiary() {
+    void unlockDiary() { 
         diary.unlockDiary("1234");
-        assertTrue(true);
+        assertFalse(diary.isLocked());
 
     }
 
     @Test
     void isLocked() {
-        diary.isLocked();
-        assertTrue(true);
+        diary.lockDiary();
+        assertTrue(diary.isLocked() );
     }
 
     @Test
