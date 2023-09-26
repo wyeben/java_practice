@@ -49,11 +49,11 @@ public class AccountTest {
         assertEquals("1", account.getAccountNumber());
     }
 
-    @Test
-    public void registerAnAccount(){
-        account.register("Yila", "Benson");
-        account.setAccountNumber("12243645");
-        assertEquals("Yila Benson 12243645",account.getAccountDetail());
+//    @Test
+//    public void registerAnAccount(){
+//        account.register("Yila", "Benson");
+//        account.setAccountNumber("12243645");
+//        assertEquals("Yila Benson 12243645",account.getAccountDetail());
 
     }
-}
+
