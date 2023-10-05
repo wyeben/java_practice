@@ -8,56 +8,52 @@ import static org.junit.jupiter.api.Assertions.*;
 class DiaryTest {
     private Diary diary;
     @BeforeEach
-    void setUp() {
+   public void setUp() {
          diary = new Diary("Benson", "1234");
     }
 
     @Test
-    void lockDiary() {
+    public void canLockDiary() {
         diary.lockDiary();
-        assertTrue(true);
+        assertTrue(diary.isLocked());
     }
 
     @Test
-    void unlockDiary() { 
+    public void canUnlockDiary() {
         diary.unlockDiary("1234");
         assertFalse(diary.isLocked());
 
     }
 
     @Test
-    void isLocked() {
-        diary.lockDiary();
-        assertTrue(diary.isLocked() );
-    }
-
-    @Test
-    void createEntry() {
+    public void canCreateEntry() {
         diary.createEntry("SirChi", "You cannot kill me");
         assertEquals(1, diary.getEntries().size());
     }
 
     @Test
-    void deleteEntry() {
+    public void canDeleteEntry() {
         diary.deleteEntry(1);
-        assertTrue(true);
+        assertEquals(0, diary.getEntries().size());
     }
 
     @Test
-    void findEntryById() {
+    public void canFindEntryById() {
         diary.findEntryById(1);
-        assertTrue(true);
+        assertEquals(0, diary.getEntries().size());
+
     }
 
     @Test
-    void updateEntry() {
+    public void canUpdateEntry() {
         diary.updateEntry(1, "How much i love to code");
-        assertTrue(true);
+        assertEquals(0, diary.getEntries().size());
+
     }
 
     @Test
-    void displayEntries() {
+    public void canDisplayEntries() {
         diary.displayEntries();
-        assertTrue(true);
+        assertEquals(0, diary.getEntries().size());
     }
 }
