@@ -38,4 +38,13 @@ public class ArraySwapIndexOfStringsTest {
         int output = 2;
         assertEquals(output, arraySwapIndexOfNumbers.numberWithHighestFrequency(input));
     }
+
+    @Test
+    public void canAdddigits(){
+        ArraySwapIndexOfStrings arraySwapIndexOfNumbers = new ArraySwapIndexOfStrings();
+        int input = 38;
+        int output = 2;
+        assertEquals(output, arraySwapIndexOfNumbers.addDigits(input));
+
+    }
 }
