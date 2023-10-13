@@ -37,4 +37,8 @@ public class ArrayRearrangement2 {
 
         return result;
     }
+
+    public static int[] chngePosition(int[] input) {
+        return null;
+    }
 }

@@ -39,4 +39,10 @@ public class ArrayRearrangement2Test {
             assertEquals(expected[i], result[i]);
         }
     }
+    @Test
+    public void testChangeArrayPositionAtRandom(){
+        int[] input = {5,6,3,2};
+        int[] expected = {6,2,5,3};
+        int[] result = ArrayRearrangement2.chngePosition(input);
+    }
 }
