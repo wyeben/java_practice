@@ -3,6 +3,7 @@ package tdd;
 import org.junit.Test;
 import tdd.classwork.ArrayRearrangement2;
 
+import static org.junit.Assert.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ArrayRearrangement2Test {
@@ -44,5 +45,6 @@ public class ArrayRearrangement2Test {
         int[] input = {5,6,3,2};
         int[] expected = {6,2,5,3};
         int[] result = ArrayRearrangement2.chngePosition(input);
+        assertArrayEquals(expected,result);
     }
 }
