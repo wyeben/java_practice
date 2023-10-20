@@ -40,11 +40,18 @@ public class ArraySwapIndexOfStringsTest {
     }
 
     @Test
-    public void canAdddigits(){
+    public void canAddDigits() {
         ArraySwapIndexOfStrings arraySwapIndexOfNumbers = new ArraySwapIndexOfStrings();
         int input = 38;
         int output = 2;
         assertEquals(output, arraySwapIndexOfNumbers.addDigits(input));
+    }
+        @Test
+    public void canMoveZeros(){
+        ArraySwapIndexOfStrings arraySwapIndexOfNumbers = new ArraySwapIndexOfStrings();
+        int[] input = {4,3,0,2,0,4,10,12};
+        int[] output = {4,3,2,4,10,12,0,0};
+        assertArrayEquals(output, arraySwapIndexOfNumbers.swapIndexOfNumbers(input,output));
 
     }
 }
