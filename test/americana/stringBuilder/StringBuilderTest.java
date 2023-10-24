@@ -18,5 +18,9 @@ public class StringBuilderTest {
     public void canDelete(){
 
     }
+    @Test
+    public void canInsert(){
+
+    }
 
 }
