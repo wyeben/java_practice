@@ -26,5 +26,8 @@ public class StringBuilderTest {
     public void canReplace(){
 
     }
+    @Test
+    public void canReverse(){
 
+    }
 }
