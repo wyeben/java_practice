@@ -14,5 +14,9 @@ public class StringBuilderTest {
         String result = name.append(letter);
         assertEquals("ben",result);
 }
+    @Test
+    public void canDelete(){
+
+    }
 
 }
