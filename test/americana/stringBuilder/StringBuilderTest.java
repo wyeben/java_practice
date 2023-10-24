@@ -22,5 +22,9 @@ public class StringBuilderTest {
     public void canInsert(){
 
     }
+    @Test
+    public void canReplace(){
+
+    }
 
 }
