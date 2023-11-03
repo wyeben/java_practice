@@ -9,4 +9,6 @@ public class Teaching {
         System.out.println(number1*number2);
 
     }
+
+    public static String check()
 }
