@@ -10,5 +10,7 @@ public class Teaching {
 
     }
 
-    public static String check()
+    public static String check(){
+
+    }
 }
