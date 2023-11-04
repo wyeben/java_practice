@@ -13,5 +13,5 @@ public class Teaching {
     public static String check(){
         return "";
     }
-    public void reverse
+    public void reverseWords
 }
