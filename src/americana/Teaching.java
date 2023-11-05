@@ -13,7 +13,7 @@ public class Teaching {
     public static String check(){
         return "";
     }
-    public void reverseWords(){
+    public String reverseWords(){
         return;
     }
 }
