@@ -14,6 +14,6 @@ public class Teaching {
         return "";
     }
     public String reverseWords(){
-        return;
+        return "";
     }
 }
