@@ -22,7 +22,7 @@ public class Account {
             balance += amount;
             System.out.println("Deposit successful");
         }else {
-            System.out.println("Amount");
+            System.out.println("Amount must be greater than zero");
         }
     }
 }
