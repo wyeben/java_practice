@@ -36,6 +36,8 @@ public class Account {
     }
 
     public static void main(String[] args) {
-        Account account = new Account();
+        Account account = new Account("243646", 2000);
+
+        account
     }
 }
