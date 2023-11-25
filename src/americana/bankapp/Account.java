@@ -17,10 +17,10 @@ public class Account {
         return accountNumber;
     }
 
-    public double deposit(double amount){
+    public void deposit(double amount){
         if(amount > 0){
             balance += amount;
-            System.out.println("Depo");
-        }
+            System.out.println("Deposit successful");
+        }else {}
     }
 }
