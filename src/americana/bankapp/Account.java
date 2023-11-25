@@ -39,6 +39,7 @@ public class Account {
         Account account = new Account("243646", 0.0);
 
         account.deposit(2000);
-        account.withdraw();
+        account.withdraw(500);
+        System.out.println();
     }
 }
