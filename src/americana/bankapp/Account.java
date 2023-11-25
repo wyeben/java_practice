@@ -34,4 +34,8 @@ public class Account {
             System.out.println("Insuficient balance");
         }
     }
+
+    public static void main(String[] args) {
+        Account account = new Account();
+    }
 }
