@@ -29,7 +29,7 @@ public class Account {
     public void withdraw(double amount){
         if(balance > amount){
             balance -= amount;
-            System.out.println("");
+            System.out.println("Withdrawal successful");
         }
     }
 }
