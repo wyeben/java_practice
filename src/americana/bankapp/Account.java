@@ -21,6 +21,8 @@ public class Account {
         if(amount > 0){
             balance += amount;
             System.out.println("Deposit successful");
-        }else {}
+        }else {
+            System.out.println("Amount");
+        }
     }
 }
