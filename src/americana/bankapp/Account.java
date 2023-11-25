@@ -25,4 +25,8 @@ public class Account {
             System.out.println("Amount must be greater than zero");
         }
     }
+
+    public void withdraw(double amount){
+
+    }
 }
