@@ -31,14 +31,14 @@ public class Account {
             balance -= amount;
             System.out.println("Withdrawal successful");
         }else {
-            System.out.println("Insuficient balance");
+            System.out.println("Insufficient funds");
         }
     }
 
     public static void main(String[] args) {
         Account account = new Account("243646", 0.0);
 
-        account.deposit(2000);
+        account.deposit(200);
         account.withdraw(500);
         System.out.println(account.getBalance());
     }
