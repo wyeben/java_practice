@@ -30,6 +30,8 @@ public class Account {
         if(balance > amount){
             balance -= amount;
             System.out.println("Withdrawal successful");
+        }else {
+            System.out.println("");
         }
     }
 }
