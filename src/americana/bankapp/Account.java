@@ -31,7 +31,7 @@ public class Account {
             balance -= amount;
             System.out.println("Withdrawal successful");
         }else {
-            System.out.println("");
+            System.out.println("Insuficient balance");
         }
     }
 }
