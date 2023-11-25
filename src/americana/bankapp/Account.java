@@ -40,6 +40,6 @@ public class Account {
 
         account.deposit(2000);
         account.withdraw(500);
-        System.out.println();
+        System.out.println(account.getBalance());
     }
 }
