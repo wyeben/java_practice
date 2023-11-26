@@ -11,7 +11,7 @@ public class Account {
         this.balance = newBalance;
     }
     public String getAccountName(){
-        return
+        return accountName;
     }
 
     public double getBalance(){
