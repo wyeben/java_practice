@@ -47,6 +47,6 @@ public class Account {
         account.withdraw(500);
         System.out.println(account.getBalance());
         System.out.println(account.getAccountName());
-        System.out.println(account.);
+        System.out.println(account.getAccountNumber());
     }
 }
