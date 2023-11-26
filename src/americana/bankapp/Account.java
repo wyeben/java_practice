@@ -3,7 +3,7 @@ package americana.bankapp;
 public class Account {
     private String accountNumber;
     private double balance;
-    private String acc
+    private String accountName;
 
     public Account(String accountNumber, double newBalance) {
         this.accountNumber = accountNumber;
