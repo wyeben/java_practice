@@ -41,7 +41,7 @@ public class Account {
     }
 
     public static void main(String[] args) {
-        Account account = new Account("""243646", 0.0);
+        Account account = new Account("Benson","243646", 0.0);
 
         account.deposit(200);
         account.withdraw(500);
