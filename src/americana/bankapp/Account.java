@@ -10,7 +10,7 @@ public class Account {
         this.accountNumber = accountNumber;
         this.balance = newBalance;
     }
-    public String
+    public String getAccountName()
 
     public double getBalance(){
         return balance;
