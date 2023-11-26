@@ -6,6 +6,7 @@ public class Account {
     private String accountName;
 
     public Account(String accountName, String accountNumber, double newBalance) {
+        this.accountName = accountName;
         this.accountNumber = accountNumber;
         this.balance = newBalance;
     }
