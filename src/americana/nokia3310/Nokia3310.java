@@ -42,27 +42,33 @@ public class Nokia3310 {
 
     public static void main(String[] args) {
         Nokia3310 nokia3310 = new Nokia3310();
-        System.out.println("""
+        boolean exit = false;
+        do {
+
+            System.out.println("""
                 Nokia
                 Date/Time
                 Insert Sim1
                 Insert Sim2
                 press 1 to insert sim""");
 
-        Scanner scanner = new Scanner(System.in);
-        int userInput = scanner.nextInt();
+            Scanner scanner = new Scanner(System.in);
+            int userInput = scanner.nextInt();
 
-        switch (userInput) {
-            case 1:
-                System.out.println("Sim inserted successfully");
-                break;
-            case 2:
-                System.out.println("Displaying menu...");
-                nokia3310.menu();
-                break;
-            default:
-                System.out.println("Invalid input");
-                break;
+            switch (userInput) {
+                case 1:
+                    System.out.println("Sim inserted successfully");
+                    break;
+                case 2:
+                    System.out.println("Displaying menu...");
+                    nokia3310.menu();
+                    break;
+                default:
+                    System.out.println("Invalid input");
+                    break;
+            }
+        }while(!exit){
+
         }
     }
 
