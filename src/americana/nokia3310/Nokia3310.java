@@ -56,6 +56,7 @@ public class Nokia3310 {
             case 1:
                 System.out.println("Sim inserted successfully");
                 break;
+            case
         }
     }
 
