@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Nokia3310 {
 
-    public void menu(){
+    public void menu() {
         System.out.println("""
                 Select
                 1. Phone Book
@@ -21,7 +21,8 @@ public class Nokia3310 {
                 12. Profiles
                 13. Sim Services""");
     }
-    public void phoneBook(){
+
+    public void phoneBook() {
         System.out.println("""
                 1. Search
                 2. Service numbers
@@ -34,31 +35,28 @@ public class Nokia3310 {
                 9. Speed dials
                 10. Voice tags""");
     }
-    public void search(){
+
+    public void search() {
         System.out.println("Searching...");
     }
 
     public static void main(String[] args) {
-        System.out.println("Nokia");
         Nokia3310 nokia3310 = new Nokia3310();
-        nokia3310.menu();
+        System.out.println("""
+                Nokia
+                Date/Time
+                Insert Sim1
+                Insert Sim2
+                press 1 to insert sim""");
 
         Scanner scanner = new Scanner(System.in);
-        String userInput = scanner.nextLine();
+        int userInput = scanner.nextInt();
 
-        switch (userInput){
-            case "1":
-                System.out.println("Phonebook opened");
-                nokia3310.phoneBook();
-                System.out.println("Press 0 to go back");
-                String userInput2 = scanner.nextLine();
-                switch (userInput2){
-                    case "1":
-                        nokia3310.search();
-                        break;
-                }
+        switch (userInput) {
+            case 1:
+                System.out.println("Sim inserted successfully");
                 break;
-        }
         }
     }
 
+}
