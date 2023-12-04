@@ -55,9 +55,10 @@ public class Nokia3310 {
         switch (userInput) {
             case 1:
                 System.out.println("Sim inserted successfully");
-                break;
+
             case 2:
                 System.out.println("Displaying menu...");
+                nokia3310.menu();
         }
     }
 
