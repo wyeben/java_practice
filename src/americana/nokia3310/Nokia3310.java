@@ -43,14 +43,15 @@ public class Nokia3310 {
     public static void main(String[] args) {
         Nokia3310 nokia3310 = new Nokia3310();
         boolean exit = false;
-        do {
-
-            System.out.println("""
+        System.out.println("""
                 Nokia
                 Date/Time
                 Insert Sim1
                 Insert Sim2
                 press 1 to insert sim""");
+        do {
+
+
 
             Scanner scanner = new Scanner(System.in);
             int userInput = scanner.nextInt();
