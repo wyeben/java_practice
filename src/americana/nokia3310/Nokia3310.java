@@ -57,7 +57,7 @@ public class Nokia3310 {
                 System.out.println("Sim inserted successfully");
                 break;
             case 2:
-
+                System.out.println("Displaying menu...");
         }
     }
 
