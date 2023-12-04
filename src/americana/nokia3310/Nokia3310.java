@@ -51,8 +51,6 @@ public class Nokia3310 {
                 press 1 to insert sim""");
         do {
 
-
-
             Scanner scanner = new Scanner(System.in);
             int userInput = scanner.nextInt();
 
@@ -64,6 +62,7 @@ public class Nokia3310 {
                 case 2:
                     System.out.println("Displaying menu...");
                     nokia3310.menu();
+                    System.out.println("press 0 to switch off");
                     break;
                 default:
                     System.out.println("Invalid input");
