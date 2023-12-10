@@ -64,6 +64,7 @@ public class Nokia3310 {
                     nokia3310.menu();
                     System.out.println("press 0 to switch off");
                     break;
+
                 case 0:
                     exit = true;
                     System.out.println("Goodbye...");
@@ -71,7 +72,6 @@ public class Nokia3310 {
                     System.out.println("Invalid input");
                     break;
             }
-
         }while(!exit);
 
         }
