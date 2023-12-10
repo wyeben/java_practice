@@ -55,6 +55,7 @@ public class Nokia3310 {
             int userInput = scanner.nextInt();
 
             switch (userInput) {
+
                 case 1:
                     System.out.println("Sim inserted successfully");
                     System.out.println("press 2 to view menu");
@@ -64,7 +65,6 @@ public class Nokia3310 {
                     nokia3310.menu();
                     System.out.println("press 0 to switch off");
                     break;
-
                 case 0:
                     exit = true;
                     System.out.println("Goodbye...");
