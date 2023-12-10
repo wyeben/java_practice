@@ -71,6 +71,7 @@ public class Nokia3310 {
                     System.out.println("Invalid input");
                     break;
             }
+
         }while(!exit);
 
         }
