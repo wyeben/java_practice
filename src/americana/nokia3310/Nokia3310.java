@@ -68,7 +68,6 @@ public class Nokia3310 {
                 case 0:
                     exit = true;
                     System.out.println("Goodbye...");
-
                 default:
                     System.out.println("Invalid input");
                     break;
