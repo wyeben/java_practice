@@ -74,7 +74,6 @@ public class Nokia3310 {
             }
         }while(!exit);
 
-
         }
     }
 
