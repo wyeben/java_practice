@@ -12,6 +12,7 @@ public class RightAngleTriangle {
         for (int j = rows; j >= 1; j--) {
             for (int k = 1; k <= j; k++) {
                 System.out.print("* ");
+
             }
         }
         System.out.println();
